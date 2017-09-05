@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Invie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <style>
+    @font-face{font-family:'icomoon';src:url(./fonts/icomoon.eot?3iy19u);src:url(./fonts/icomoon.eot?3iy19u#iefix) format("embedded-opentype"),url(./fonts/icomoon.ttf?3iy19u) format("truetype"),url(./fonts/icomoon.woff?3iy19u) format("woff"),url(./fonts/icomoon.svg?3iy19u#icomoon) format("svg");font-weight:400;font-style:normal}[class*=" icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\e9bd"}body{font-family:'Allerta',sans-serif;margin:0}.contenedor{max-width:800px;margin:auto;position:relative}.background{background-image:url(./images/background.png);background-size:cover;background-color:#273b47}.button{border-radius:10px;color:#fff;background:#fd324e;border:none;padding:7px 12px;font-size:20px;background:linear-gradient(to right,#ff7250,#fe344e);text-decoration:none}.titulo{font-size:70px;font-family:'Montserrat',sans-serif;margin-bottom:0}.titulo span{text-decoration:underline}.title-a{font-size:24px;margin-top:0}.guitarras{color:#1F313C;margin-bottom:60px}.guitarras h2{font-size:35px;font-family:'Montserrat',sans-serif}.portada{color:#fff;padding:20px;height:450px}.menu{font-size:24px;display:inline-block;position:absolute;right:0}.menu a{color:#fff;text-decoration:none}.menu li{display:inline-block;margin-left:30px}.logo{display:inline-block;margin-left:0}.derecha{float:right;position:relative;top:-127px}.header{position:relative}.menu li:before{content:'¤ ';font-size:20px;line-height:20px;color:#fff}.burger-button{width:40px;line-height:40px;height:40px;border-radius:50%;background:#395667;display:inline-block;text-align:center;position:fixed;top:20px;left:20px;z-index:3;color:#fff;display:none}.video-demo{max-width:550px;margin:0 auto}@media screen and (max-width: 800px){.titulo{font-size:45px;margin-top:30px}.title-a{font-size:18px}.portada{height:auto}.portada .button{display:inline-block;margin-bottom:30px}.guitarras{text-align:center}.derecha{float:none;position:static}}@media screen and (max-width: 650px){.header{text-align:center}.logo{margin:0}.menu{position:static;display:block}.menu li:first-child{margin:0}.menu ul{padding:0}}@media screen and (max-width: 500px){.burger-button{display:block}.portada .contenedor{position:static}.header{position:static}.menu{background:rgba(255,60,88,.8);position:fixed;top:0;left:-100%;bottom:0;z-index:2;display:flex;align-items:center;width:100%}.menu ul{flex:1}.menu li{display:block;margin:0;padding:10px 0;border-bottom:1px solid #fff}.menu li::before{display:none}.menu li:first-child{border-top:1px solid #fff}.portada{text-align:center}.titulo{font-size:35px}.title-a{font-size:15px}.guitarra img{width:200px;height:auto}.video-demo{margin:0 10px}}.video-responsive-contenedor{position:relative;padding-top:56.25%;margin-bottom:20px}.video-responsive-src{position:absolute;top:0;bottom:0;right:0;left:0;width:100%;height:100%}@media screen and (-webkit-min-device-pixel-ratio: 2){.background{background-image:url(./images/background2x.png)}}
+    </style>
+  </head>
+  <body>
+
+    <!--PORTADA-->
+    <section id="portada" class="InvieHero">
+        <!--HEADER-->
+      <header id="header" class="InvieHero-header u-wrapper">
+        <!--logo-->
+        <figure class="InvieHero-logo">
+          <img src="images/invie.png" srcset="images/invie.png 1x, images/invie2x.png 2x" width="186" height="60" alt="Invie Logo">
+        </figure>
+        <!--menu-->
+        <span class="InvieHero-btn icon-menu" id="burger-button"></span>
+        <nav class="InvieHero-navbar" id="menu">
+          <ul class="InvieHero-menu">
+            <li class="InvieHero-menu-item"><a href="index.html">Home</a></li>
+            <li class="InvieHero-menu-item"><a href="#guitarras">Guitarras</a></li>
+            <li class="InvieHero-menu-item"><a href="precios.html">Precios</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="InvieHero-copy u-wrapper">
+        <h1 class="InvieHero-copy-title">Guitarras <span>Invie</span>sibles</h1>
+        <h3 class="InvieHero-copy-subtitle">Sé la estrella que siempre quisiste ser</h3>
+        <a class="InvieHero-copy-btn" href="#guitarras">Ver más...</a>
+      </div>
+    </section>
+    <!--GUITARRAS-->
+    <section id="guitarras" class="InvieGuitars u-wrapper">
+      <h2 class="InvieGuitars-title">Nuestras Guitarras</h2>
+      <article class="InvieGuitars-item">
+        <img class="InvieGuitars-item-img" data-src="images/invie-acustica.png|images/invie-acustica2x.png" alt="Invie Acustica" width="350"/>
+        <div class="InvieGuitars-item-container">
+          <h3 class="InvieGuitars-item-title">Invie Acustica</h3>
+          <ol class="InvieGuitars-item-list">
+            <li>Estilo vintage</li>
+            <li>Madera pura</li>
+            <li>Incluye estuche invisible de aluminio</li>
+          </ol>
+        </div>
+      </article>
+      <article class="InvieGuitars-item">
+        <img class="InvieGuitars-item-img" data-src="images/invie-classic.png|images/invie-classic2x.png" alt="Invie Classic" width="350" />
+        <div class="InvieGuitars-item-container">
+          <h3 class="InvieGuitars-item-title">Invie Clasica</h3>
+          <ol class="InvieGuitars-item-list">
+            <li>Estilo futurista</li>
+            <li>Liviana</li>
+            <li>Incluye ~SWAG~</li>
+          </ol>
+        </div>
+      </article>
+    </section>
+    <footer class="InvieFooter">
+      <div class="InvieFooter-cointainer">
+        <div class="InvieFooter-contact">
+          <img class="InvieFooter-logo" data-src="images/invie-white.png|images/invie-white2x.png" alt="logotipo blanco">
+          <a class="Invie-footer-link" href="tel:+522288888888"><strong>Teléfono</strong><span>2288888888</span></a>
+          <a class="Invie-footer-link" href="mailto:contacto@invie.com"><strong>Contacto</strong><span>contacto@invie.com</span></a>
+        </div>
+        <form class="InvieFooter-form">
+          <div class="InvieFooter-form-column">
+            <label class="InvieFooter-form-label" for="nombre" name="nombre">Nombre:</label>
+            <input class="InvieFooter-form-input InvieFooter-form-input--text" type="text" required="true" id="nombre" />
+            <label for="email" name="email">E-mail:</label>
+            <input class="InvieFooter-form-input InvieFooter-form-input--text" type="email" required id="email" />
+            <div class="sexo">
+              <label class="InvieFooter-form-label" for="mujer">
+                <input class="InvieFooter-form-input InvieFooter-form-input-radio" type="radio" id="mujer" name="sexo" value="mujer" checked /> Mujer
+              </label>
+              <label class="InvieFooter-form-label" for="hombre">
+                <input class="InvieFooter-form-input InvieFooter-form-input-radio" type="radio" id="hombre" name="sexo" value="hombre" /> Hombre
+              </label>
+            </div>
+            <div class="intereses">
+              <label class="InvieFooter-form-label" for="cotizacion">
+                <input class="InvieFooter-form-input InvieFooter-form-input-check" type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked /> Cotización
+              </label>
+              <label class="InvieFooter-form-label" for="reclamos">
+                <input class="InvieFooter-form-input InvieFooter-form-input-check" type="checkbox" id="reclamos" name="intereses" value="reclamos" /> Reclamos
+              </label>
+              <label class="InvieFooter-form-label" for="comentarios">
+                <input class="InvieFooter-form-input InvieFooter-form-input-check" type="checkbox" id="comentarios" name="intereses" value="comentarios" /> Comentarios
+              </label>
+              <label class="InvieFooter-form-label" for="otros">
+                <input class="InvieFooter-form-input InvieFooter-form-input-check" type="checkbox" id="otros" name="intereses" value="otros" /> Otros
+              </label>
+            </div>
+          </div>
+          <div class="InvieFooter-form-column">
+            <label class="InvieFooter-form-label" for="comentarios"> Asunto
+              <textarea class="InvieFooter-form-input InvieFooter-form-input-textarea" id="comentarios" name="comentarios" rows="7" cols="35"></textarea>
+              <input class="InvieFooter-form-btn" type="submit" class="button" value="Enviar">
+            </label>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <link rel="stylesheet" href="css/invie.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Montserrat', 'Allerta']
+        }
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

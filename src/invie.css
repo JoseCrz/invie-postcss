@@ -1,7 +1,10 @@
-body {
-  background: #27276A;
-}
+.InvieHero {
+  padding: 20px;
+  height: 500px;
 
-.claseTest {
-  display: flex;
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

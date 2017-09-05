@@ -3,6 +3,5 @@ body {
 }
 
 .claseTest {
-  display: -webkit-box;
   display: flex;
 }

@@ -1,3 +1,9 @@
+/*Custom Media Queries */
+
+/*Mixins */
+
+
+
 .InvieHero {
   padding: 20px;
   height: 500px;
@@ -64,3 +70,15 @@
 .InvieFooter {
   background-color: #273b47;
 }
+
+.InvieFooter-form-btn {
+      border-radius: 12px;
+      border: none;
+      color: #fafafa;
+      padding: 7px 12px;
+      cursor: pointer;
+      font-size: 18px;
+      text-decoration: none;
+      background: #fd324e;
+      background: linear-gradient(to left, rgb(191, 51, 70), rgb(253, 137, 98));
+    }

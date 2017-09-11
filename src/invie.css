@@ -10,10 +10,24 @@
   --fontSize: 18px;
 }
 
+/*Custom Media Queries */
 @custom-media --mobile (max-width: 500px);
 @custom-media --table (max-width: 650px);
 @custom-media --desktop (max-width: 800px);
 @custom-media --retina (-webkit-min-device-pixel-ratio: 2);
+
+/*Mixins */
+@define-mixin btn $textColor, $bgColor, $bgColorStart, $bgColorEnd {
+    border-radius: 12px;
+    border: none;
+    color: $(textColor);
+    padding: 7px 12px;
+    cursor: pointer;
+    font-size: var(--fontSize);
+    text-decoration: none;
+    background: $(bgColor);
+    background: linear-gradient(to left, $(bgColorStart), $(bgColorEnd));
+}
 
 
 
@@ -45,19 +59,16 @@
     }
 
     &-btn {
-      border-radius: 12px;
-      border: none;
-      color: var(--bg-body);
-      padding: 7px 12px;
-      cursor: pointer;
-      font-size: var(--fontSize);
-      text-decoration: none;
-      background: var(--btn-gradient);
-      background: linear-gradient(to left, var(--btn-gradient-start), var(--btn-gradient-end));
+      @mixin btn var(--bg-body), var(--btn-gradient), var(--btn-gradient-start), var(--btn-gradient-end);
     }
   }
 }
 
 .InvieFooter {
   background-color: var(--bg-footer);
+  &-form {
+    &-btn {
+      @mixin btn var(--bg-body), var(--btn-gradient), var(--btn-gradient-start), var(--btn-gradient-end);
+    }
+  }
 }

@@ -29,6 +29,7 @@
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
     "postcss-mixins": "^6.1.0",
-    "postcss-nested": "^2.1.2"
+    "postcss-nested": "^2.1.2",
+    "rucksack-css": "^1.0.2"
   }
 }

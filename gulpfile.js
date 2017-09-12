@@ -7,6 +7,7 @@ var atImport = require("postcss-import")
 var lost = require ("lost")
 var csswring = require("csswring")
 var rucksack = require("rucksack-css")
+var mqpacker = require("css-mqpacker")
 var cssnext = require("postcss-cssnext")
 
 
@@ -29,6 +30,7 @@ gulp.task("css", function () {
     lost(),
     rucksack(),
     cssnext({ browsers: ["> 5%", "ie 8"]}),
+    mqpacker,
     csswring()
   ]
 

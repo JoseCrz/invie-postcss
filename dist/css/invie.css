@@ -1,28 +1,53 @@
 /*Custom Media Queries */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?3iy19u');
+  src:  url('../fonts/icomoon.eot?3iy19u#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3iy19u') format('truetype'),
+    url('../fonts/icomoon.woff?3iy19u') format('woff'),
+    url('../fonts/icomoon.svg?3iy19u#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-feature-settings: normal;
+          font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-close:before {
+  content: "\ea0d";
+}
+.icon-envelope:before {
+  content: "\ea86";
+}
 /*Mixins */
-
-
-
 .InvieHero {
   padding: 20px;
   height: 500px;
   background: url("../images/background.png")  #466173;
 }
-
-
-
 @media (-webkit-min-device-pixel-ratio: 2) {
-
-
-
 .InvieHero {
     background-image: url("../images/background2x.png")
 }
   }
-
-
-
 .InvieHero-header {
     display: -webkit-box;
     display: flex;
@@ -32,29 +57,17 @@
     -webkit-box-pack: justify;
             justify-content: space-between;
   }
-
-
-
 .InvieHero-logo {
     transition: all .3s ease-in;
   }
-
-
-
 .InvieHero-logo:hover {
       filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="2" /></filter></svg>#filter');
       -webkit-filter: blur(2px);
               filter: blur(2px);
     }
-
-
-
 .InvieHero-copy-title {
       font-size: 63px;
     }
-
-
-
 .InvieHero-copy-btn {
       border-radius: 12px;
       border: none;
@@ -66,11 +79,9 @@
       background: #fd324e;
       background: linear-gradient(to left, rgb(191, 51, 70), rgb(253, 137, 98));
     }
-
 .InvieFooter {
   background-color: #273b47;
 }
-
 .InvieFooter-form-btn {
       border-radius: 12px;
       border: none;

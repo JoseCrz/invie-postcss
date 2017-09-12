@@ -12,6 +12,6 @@
 }
 /*Custom Media Queries */
 @custom-media --mobile (max-width: 500px);
-@custom-media --table (max-width: 650px);
+@custom-media --tablet (max-width: 650px);
 @custom-media --desktop (max-width: 800px);
 @custom-media --retina (-webkit-min-device-pixel-ratio: 2);

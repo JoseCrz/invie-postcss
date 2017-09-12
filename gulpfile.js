@@ -4,6 +4,7 @@ var browserSync = require ("browser-sync").create()
 var cssnested = require("postcss-nested")
 var mixins = require ("postcss-mixins")
 var atImport = require("postcss-import")
+var lost = require ("lost")
 var cssnext = require("postcss-cssnext")
 
 
@@ -23,6 +24,7 @@ gulp.task("css", function () {
     atImport(),
     mixins(),
     cssnested,
+    lost(),
     cssnext({ browsers: ["> 5%", "ie 8"]})
   ]
 
